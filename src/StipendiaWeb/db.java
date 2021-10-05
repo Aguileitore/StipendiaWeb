@@ -9,8 +9,9 @@ public class db {
         
         try{
             Class.forName("org.sqlite.JDBC");
-            Connection conn =DriverManager.getConnection("jdbc:sqlite:D:\\Users\\Artemis\\ruta.....\\empnet.sqlite");
-          
+            // cambiar ruta de base de datos
+            Connection conn =DriverManager.getConnection("jdbc:sqlite:D:\\Users\\Artemis\\Downloads\\StipendiaWeb Tesis\\StipendiaWeb\\StipendiaWeb - copia\\empnet.sqlite");
+            
             return conn;
          
         }catch (Exception e){
